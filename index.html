@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cropperjs/cropper.main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Image Crop with Frame</title>
+  </head>
+  <body>
+    <div class="upload_container">
+      <h2>Upload Image</h2>
+      <input type="file" name="image" id="img_input" hidden />
+      <button class="upload_btn">Choose from Device</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal_container">
+      <div class="modal_container">
+        <button class="crop_btn">crop</button>
+      </div>
+      <div class="modal_image_container">
+        <img src="" alt="" />
+      </div>
+    </div>
+
+    <!-- cropped image Modal  -->
+
+    <div class="cropped_image_modal_container">
+      <h2>Uploaded Image</h2>
+      <div class="cropped_image_container">
+        <img src="" alt="" />
+      </div>
+      <div class="shape_button_container">
+        <button class="original_btn">Original</button>
+        <button class="heart_btn">
+          <img src="./image/heart.png" alt="" />
+        </button>
+        <button class="square_btn">
+          <img src="./image/square.png" alt="" />
+        </button>
+        <button class="circle_btn">
+          <img src="./image/circle.png" alt="" />
+        </button>
+        <button class="rectangle_btn">
+          <img src="./image/rectangle.png" alt="" />
+        </button>
+      </div>
+    </div>
+    <script src="./cropperjs/cropper.main.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
