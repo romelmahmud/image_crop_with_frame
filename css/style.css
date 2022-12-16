@@ -1,0 +1,20 @@
+img{
+  display: block;
+  max-width: 100%;
+}
+
+
+.modal_container{
+  background: #000;
+  padding: 1.875rem;
+  display: none;
+
+}
+.modal_image_container{
+  max-width: 400px;
+
+}
+
+.active{
+  display: block;
+}
