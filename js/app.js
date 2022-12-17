@@ -4,6 +4,11 @@ const uploadBtn = document.querySelector(".upload_btn");
 
 const modal = document.querySelector(".modal_container");
 const modalImageContainer = document.querySelector(".modal_image_container");
+const croppedImageModal = document.querySelector(
+  ".cropped_image_modal_container"
+);
+const cropBtn = document.querySelector(".crop_btn");
+
 // active image input button
 
 uploadBtn.addEventListener("click", () => {
@@ -32,4 +37,18 @@ imageInputBtn.addEventListener("change", function () {
     // });
     reader.readAsDataURL(file);
   }
+});
+
+cropBtn.addEventListener("click", () => {
+  let imgSrc = cropper
+    .getCroppedCanvas({
+      width: 300,
+    })
+    .toDataURL();
+  croppedImageModal.classList.remove("hide");
+  const cropped_img = document.querySelector(".cropped_img");
+  console.log(imgSrc);
+  console.log(cropped_img);
+  modal.classList.remove("active");
+  cropped_img.src = imgSrc;
 });

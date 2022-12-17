@@ -18,3 +18,23 @@ img{
 .active{
   display: block;
 }
+
+.cropped_image_modal_container{
+  background: ccc;
+  padding: 30px;
+  
+
+}
+
+.shape_button_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shape_button_container img {
+  max-width: 50px;
+}
+
+.hide {
+  display: none;
+}
